@@ -11,11 +11,4 @@ interface IEditor {
   onChange: (data: string) => void;
 }
 
-export const Editor = ({ onChange }: IEditor) => {
-  return (
-    <div>
-      <p>SunEditor</p>
-      <SunEditor lang='pt_br' onChange={onChange} />
-    </div>
-  );
-};
+export const Editor = ({ onChange }: IEditor) => <SunEditor lang='pt_br' onChange={onChange} />;
